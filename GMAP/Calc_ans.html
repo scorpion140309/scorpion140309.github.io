@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="ja">
+<meta charset="UTF-8"/>
+<head>
+<title>GMAP対策 練習問題</title>
+<link rel="stylesheet" type="text/css" href="js/gmap.css">
+<script type="text/javascript" src="./js/my_rand.js"></script>
+<script type="text/javascript" src="./js/BreakEven.js"></script>
+<script type="text/javascript" src="./js/WACC.js"></script>
+<script type="text/javascript" src="./js/FCF.js"></script>
+<script type="text/javascript" src="./js/NPV.js"></script>
+<script type="text/javascript" src="./js/CAPM.js"></script>
+</head>
+
+
+<body>
+
+<p>GMAP対策 計算を要する練習問題(要JavaScript)</p>
+<p>日付が変わると、数値が自動更新されます。</p>
+
+
+
+<script type="text/javascript">
+<!--
+
+//
+var now = new Date();
+document.write( "<p>(", now, ")</p>" );
+
+//
+var ary_str_category = new Array(
+	"【問題】、<a href='Calc_ans.html'>【解答】</a>",
+	"<a href='Calc.html'>【問題】</a>、【解答】"
+);
+var flag_anser = 0;
+var test_break_even = new C_BreakEven();
+var test_wacc = new C_WACC();
+var test_fcf = new C_FCF();
+var test_npv = new C_NPV();
+var test_capm = new C_CAPM();
+
+// header
+document.write( "<hr><p>", ary_str_category[ flag_anser ], "</p>" );
+
+// body
+document.write( "<hr><p>損益分岐点</p>" );
+test_break_even.Test_BreakEven( flag_anser );
+document.write( "<hr><p>WACC</p>" );
+test_wacc.Test_WACC( flag_anser );
+document.write( "<hr><p>FCF</p>" );
+test_fcf.Test_FCF( flag_anser );
+document.write( "<hr><p>NPV</p>" );
+test_npv.Test_NPV( flag_anser );
+document.write( "<hr><p>CAPM</p>" );
+test_capm.Test_CAPM( flag_anser );
+
+
+// -->
+</script>
+
+<hr>
+<p><a href="Test_GMAP.html">GMAP対策 目次</a></p>
+<p>
+
+<!--
+<iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?t=scorpionassoc-22&o=9&p=8&l=as1&asins=447800496X&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?t=scorpionassoc-22&o=9&p=8&l=as1&asins=4478006326&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?t=scorpionassoc-22&o=9&p=8&l=as1&asins=4478008760&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</p>
+-->
+
+</body>
+
+</html>

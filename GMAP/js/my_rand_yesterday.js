@@ -1,0 +1,5 @@
+﻿(function(){ojjfhsiksjflaj_init=[0xD9363228,0x021A79C9,0x7604820B,0xD18E1939];ojjfhsijkjkjkj=[0,0,0,0];oiuihiuhiu=0;xor_shirt={afadf_Init: function() {
+	now=new Date();
+	var my_seed = new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1);
+	voihfg=(my_seed.getYear() * 366 * 31)+(my_seed.getMonth() * 31)+(my_seed.getDate());ojjfhsijkjkjkj[0]=ojjfhsiksjflaj_init[0]^voihfg;ojjfhsijkjkjkj[1]=ojjfhsiksjflaj_init[1]^voihfg;ojjfhsijkjkjkj[2]=ojjfhsiksjflaj_init[2]^voihfg;ojjfhsijkjkjkj[3]=ojjfhsiksjflaj_init[3]^voihfg;oiuihiuhiu=1;},pppvoi: function() {afasf_ttoo=ojjfhsijkjkjkj[0]^(ojjfhsijkjkjkj[0]<<11);ojjfhsijkjkjkj[0]=ojjfhsijkjkjkj[1];ojjfhsijkjkjkj[1]=ojjfhsijkjkjkj[2];ojjfhsijkjkjkj[2]=ojjfhsijkjkjkj[3];ojjfhsijkjkjkj[3]=(ojjfhsijkjkjkj[3]^(ojjfhsijkjkjkj[3]>>19))^(afasf_ttoo^(afasf_ttoo>>8)); return	ojjfhsijkjkjkj[3];}};})();var	ns_XorShift;if(!ns_XorShift){ns_XorShift={};}ns_XorShift.Init=function(){xor_shirt.afadf_Init();}
+ns_XorShift.GetRand=function(){return	xor_shirt.pppvoi();}

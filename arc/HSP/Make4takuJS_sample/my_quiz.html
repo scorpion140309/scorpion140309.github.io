@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="ja">
+
+<head>
+<title>l‘ğ–â‘è</title>
+<link rel="stylesheet" type="text/css" href="my_quiz.css">
+<script type="text/javascript" src="./my_rand.js"></script>
+<script type="text/javascript" src="./my_quiz.js"></script>
+</head>
+
+
+<body>
+
+<p>l‘ğ–â‘è(—vJavaScript)</p>
+<p>“ú•t‚ª•Ï‚í‚é‚ÆA–â‘è‚ª©“®XV‚³‚ê‚Ü‚·B</p>
+
+<script type="text/javascript">
+<!--
+
+//
+var now = new Date();
+document.write( "<p>(", now, ")</p>" );
+
+//
+var ary_str_category = new Array(
+	"y–â‘èzA<a href='my_quiz_ans.html'>y‰ğ“šz</a>",
+	"<a href='my_quiz.html'>y–â‘èz</a>Ay‰ğ“šz"
+);
+var flag_anser = 0;
+var test_sel1 = new C_SELECT_ONE();
+
+// header
+document.write( "<hr><p>", ary_str_category[ flag_anser ], "</p>" );
+
+// body
+
+ns_myRand.Init();
+test_sel1.Test_SelectOne( flag_anser );
+
+
+// -->
+</script>
+
+<hr>
+
+
+</body>
+
+</html>
