@@ -18,10 +18,10 @@ a:active { color: #ff8000; }
 	background-color:#f8f8f8;
 }
 
-.str_subtitle
+.str_title
 {
 	color: #404040;
-	font-size: 28;
+	font-size: 32;
 }
 
 .str_subsubtitle
