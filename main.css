@@ -34,5 +34,7 @@ a:active { color: #ff8000; }
 {
 	color: #FF0000;
 	font-weight: bold;
+	display: inline-block;
+	_display: inline;
 }
 
