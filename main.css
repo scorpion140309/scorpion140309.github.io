@@ -16,9 +16,16 @@ a:active { color: #ff8000; }
 	padding:10px;
 	border:1px solid #336699;
 	background-color:#f8f8f8;
+	margin : 30px ;
 }
 
 .str_title
+{
+	color: #404040;
+	font-size: 32;
+}
+
+.str_subtitle
 {
 	color: #404040;
 	font-size: 32;
